@@ -28,10 +28,10 @@ namespace csharp
                 {
                     item.SellIn = item.SellIn - 1;
                 }
-                manageQualityDependingOnSellIn(item);            }
+                AlterQualityDependingOnSellIn(item);            }
         }
 
-		private void manageQualityDependingOnSellIn(Item item)
+		private void AlterQualityDependingOnSellIn(Item item)
 		{
             if (item.SellIn < 0)
             {
